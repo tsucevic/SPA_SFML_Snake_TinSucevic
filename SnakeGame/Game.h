@@ -7,6 +7,7 @@
 #include "Running.h"
 #include "Settings.h"
 #include "GameOver.h"
+#include "HighScores.h"
 
 using namespace std;
 using namespace sf;
@@ -31,6 +32,7 @@ private:
 	Settings settings;
 	GameOver over;
 	Running game;
+	HighScores highScores;
 
 public:
 	Game(RenderWindow* window);

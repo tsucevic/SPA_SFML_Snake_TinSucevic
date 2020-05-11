@@ -155,8 +155,10 @@
     <ClCompile Include="Food.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameOver.cpp" />
+    <ClCompile Include="HighScores.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Running.cpp" />
+    <ClCompile Include="SaveHighScores.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Snake.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -166,9 +168,11 @@
     <ClInclude Include="Food.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameOver.h" />
+    <ClInclude Include="HighScores.h" />
     <ClInclude Include="Keystroke.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Running.h" />
+    <ClInclude Include="SaveHighScores.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Snake.h" />
   </ItemGroup>

@@ -20,6 +20,7 @@ void Game::start()
 
 	settings.init(window->getSize().x, window->getSize().y);
 	over.init(window->getSize().x, window->getSize().y);
+	highScores.init(window->getSize().x, window->getSize().y);
 }
 
 // Updates the screen based on gameState and keyStrokes
@@ -107,6 +108,21 @@ void Game::update()
 		over.draw(window);
 		break;
 	case Game::HIGH_SCORES:
+		while (key.isNewPressed)
+		{
+			int chosenItem = highScores.keyPress(key);
+			switch (chosenItem)
+			{
+			case 1:
+				gameState = MENU;
+				break;
+			default:
+				gameState = HIGH_SCORES;
+				break;
+			}
+			key.isNewPressed = false;
+		}
+		highScores.draw(window);
 		break;
 	default:
 		break;

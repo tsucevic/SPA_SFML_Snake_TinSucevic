@@ -110,6 +110,7 @@ int GameOver::keyPress(Keystroke key)
 		break;
 
 	case sf::Keyboard::Return:
+		savior.lsa(id, score);
 		switch (getPressedItem())
 		{
 

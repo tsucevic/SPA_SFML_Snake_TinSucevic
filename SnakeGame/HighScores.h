@@ -9,27 +9,20 @@
 using namespace std;
 using namespace sf;
 
-#define MAX_NUMBER_OF_ITEMS 3
+#define MAX_NUMBER_OF_ITEMS 6
 
-class GameOver
+class HighScores
 {
 private:
 	int width;
 	int height;
 	int selectedItemIndex;
 
-	int score;
-	int id;
-
 	Font font;
 	Text menu[MAX_NUMBER_OF_ITEMS];
 
 	SaveHighScores savior;
-
-	void moveUp();
-	void moveDown();
-	void increase();
-	void decrease();
+	list<HighScore> scores;
 
 public:
 	void init(int width, int height);
@@ -39,5 +32,4 @@ public:
 
 	int keyPress(Keystroke key);
 
-	void setScore(int score);
 };
